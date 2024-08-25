@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   function a() {
+      //     var a = 100;
+      //     function c() {
+      //       console.log(a);
+      //     }
+      //     c();
+      //   }
+
+      // clousers with lexocal scoping
+      //   function a() {
+      //     var b = 200;
+      //     function c() {
+      //       console.log(b);
+      //     }
+      //     return c;
+      //   }
+      //   var d = a();
+      //   console.log(d);
+      //   d();
+
+      // function x() {
+      //   function a() {
+      //     let x = 100;
+      //     function b() {
+      //       console.log(x);
+      //     }
+      //     x = 500;
+      //     return b;
+      //   }
+      //   return a;
+      // }
+      // var c = x();
+      // console.log(c);
+      // c();
+
+      function a() {
+        var num1 = 100;
+        function b() {
+          var num2 = 500;
+          function c() {
+            console.log(a, b);
+          }
+          c();
+        }
+        b();
+      }
+      a();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Hidden</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <input type="password" placeholder="password" id="password">
+        <img class="eye-close" src="image/eye-close.png" id="eyeicone">
+    </div>
+
+
+
+    <script>
+        let password = document.getElementById("password");
+        let eyeicone = document.getElementById("eyeicone");
+
+        eyeicone.onclick = function(){
+            if(password.type == "password"){
+                password.type = "text";
+                eyeicone.src = "image/eye-open.png";
+                
+            }else{
+                password.type = "password";
+                
+                eyeicone.src = "image/eye-close.png";
+            }
+        }
+    </script>
+</body>
+</html>

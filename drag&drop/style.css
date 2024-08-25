@@ -1,0 +1,30 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    bottom: 50%;
+}
+.box{
+    background-color: red;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    color: antiquewhite;
+    padding: 20px 0px 0px 20px;
+}
+.newclass{
+    background-color: green;
+}
+.text{
+    color: red;
+}
+.darkclass{
+    background-color: black;
+}
+.whiteclass{
+    background-color: wheat;
+}

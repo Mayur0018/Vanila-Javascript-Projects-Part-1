@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/input.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="bg-gray-700 w-full h-screen flex justify-center" class="main">
+        <div class="bg-white w-7/12 h-5/6 mt-16" class="panel">
+            <div class="bg-red-900 w-full h-14 px-60">
+                <div class="flex justify-start" class="score">
+                    <div class="font-bold text-sm mt-6 ml-4 pr-1 text-white">Hit</div>
+                    <div class="text-red-900 font-bold w-8 h-7 text-center bg-white rounded-sm mt-5 px-1" id="hitnumbers">5</div>
+                </div>
+                <div class="flex justify-center" class="score" id="mainscore">
+                    <div class="-mt-6 ml-0 w-8 h-7  font-bold text-sm mr-2 text-white">Timer</div>
+                    <div class="text-red-900 font-bold w-8 h-7 text-center -mt-7 bg-white rounded-sm" id="timer">60</div>
+                </div>
+                <div class="flex justify-end" class="score">
+                    <div class="-mt-7 ml-4 pr-1 font-bold text-sm text-center text-white">Score</div>
+                    <div class="text-red-900 w-8 h-7 text-center -mt-8 mr-4  bg-white rounded-sm px-2 font-bold" id="scorevalue">0</div>
+                </div>
+            </div>
+            <div id="buuble" class="flex gap-1 font-bold flex-wrap">   
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
